@@ -1,0 +1,9 @@
+Normal Blue #3494af
+	-Mono #4b8796
+Dark Green #34af4f
+Warm Green #63af34
+Complementary Brick Red #af3a34
+	-Mono #964e4b
+Warm Clay Brown #af5934
+Warm Magenta #af3465
+

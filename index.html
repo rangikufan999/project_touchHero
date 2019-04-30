@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width='device-width, intial-scale:1.0">
+		<title>Touch Hero</title>
+		<link rel="stylesheet" href="stylesheets/touchHero.css">
+		<script src="scripts/touchHero.js"></script>
+	</head>
+	<body>
+		<!-- Navigation Top -->
+		<nav>
+			<ul>
+				<li>
+					<a href="#">Home</a>
+					<a href="#">About</a>
+					<a href="#">Contact</a>	
+				</li>
+			</ul>
+		</nav>
+
+		<!-- GAME -->
+		<div class="container">
+			<div class="game">
+				<div class="entity-health">
+					<div id="entity-health-current" class="entity-health-current">
+
+					</div>
+					<p id="entity-health-text">
+						ENEMY HEALTH
+					</p>
+				</div>
+				<div class="entity" onclick="dealDamage()">
+					<p id="damageNum"></p>
+				</div>
+			</div>
+			<div class="hero">
+				<div class="hero-mini-info">
+					<div class="hero-profile">
+						<img class="hero-img" src="img/hero.jpg">
+					</div>
+					<div class="hero-health">
+						<div id="hero-health-current" class="hero-health-bar-current">
+
+						</div>
+					</div>
+					<div class="hero-health-text">
+						<p id="hero-health-text">500/500</p>
+					</div>
+					<div class="hero-stats">
+						<p id="hero-atk">ATK: 10</p>
+						<p id="hero-res">RES: 5</p>
+					</div>
+					<div class="hero-level">
+						<p id="hero-level">LV: 1</p>
+					</div>
+					<div class="hero-btn">
+						<button id="heroLevelUpBtn" onclick="levelUp()">Level</button>
+					</div>
+				</div>
+				<div class="hero-extended-info">
+					<p id="hero-gold">Gold: </p>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Footer -->
+		<footer>
+
+		</footer>
+
+		<script>
+			entity = generateEntity(player.stage);
+			updateScreen();
+			updateHealthBar();
+		</script>
+	</body>
+</html>

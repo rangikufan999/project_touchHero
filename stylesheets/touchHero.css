@@ -1,0 +1,192 @@
+body{
+	margin:0;
+	background-color:#34af4f;
+	user-select:none;		
+}
+
+nav{
+	position:sticky;
+	top:0;
+	width:100%;
+	height:75px;
+	background-color:#63af34;
+	padding-top:15px;
+}
+
+nav a{
+	text-decoration:none;
+	font-size:24px;
+	margin-left:20px;
+	margin-right:20px;
+	color:white;
+}
+
+ul{
+	list-style-type:none;
+}
+
+
+/*******GAME********/
+
+.container{
+	width:50%;
+	margin:auto;
+	border-radius:25px 25px 0 0;
+	height:600px;
+}
+
+.game{
+	width:100%;
+	height:50%;
+	margin-top:0;
+	border:1px solid black;
+	border-radius:25px 25px 0 0;
+}
+
+.entity{
+	width:200px;
+	height:200px;
+	margin:auto;
+	border-radius:50%;
+	background-color:red;
+	margin-top:30px;
+}
+
+.entity:active{
+	transform: translateY(2px);
+}
+
+.entity-health{
+	border:1px solid black;
+	border-radius:25px;
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;
+	height:25px;
+	width:90%;
+	overflow:hidden;
+}
+
+.entity-health-current{
+	height:25px;
+	border-radius:25px;
+	width:100%;
+	background-color:darkred;
+}
+
+#damageNum{
+	display:none;
+	padding:100px;
+	text-align:center;
+	-webkit-animation: animDamage 1s 1;
+	animation: animDamage 1s 1;
+}
+
+@-webkit-keyframes animDamage{
+	50%{padding-top:25px;}
+	100%{opacity:0;}
+}
+
+@keyframes animDamage{
+	50%{padding-top:25px;}
+	100%{opacity:0;}
+}
+
+.hero{
+	width:100%;
+	height:50%;
+	border:1px solid black;
+}
+
+.hero-mini-info{
+	height:25%;
+	border-bottom:1px solid black;
+	margin:auto;
+}
+
+.hero-extended-info{
+	height:75%;
+}
+
+.hero-profile{
+	display:inline-block;
+	vertical-align: top;
+	height:75%;
+	width:12%;
+	margin-right:50px;
+}
+
+.hero-img{
+	display:inline-block;
+	vertical-align: top;
+	border-radius:50%;
+	width:100%;
+	height:100%;
+	margin-top:8%;
+}
+
+.hero-health{
+	display:inline-block;
+	vertical-align: top;
+	margin-top:3%;
+	height:25px;
+	width:100px;
+	border-radius:25px;
+	background-color:red;
+	overflow:hidden;
+}
+
+.hero-health-bar-current{
+	background-color:green;
+	position:relative;
+	top:0;
+	left:0;
+	height:25px;
+	width:100%;
+	overflow:hidden;
+	text-align:center;
+}
+
+.hero-health-text{
+	display:inline-block;
+	vertical-align:top;
+	margin-top:1%;
+	margin-left:50px;
+	width:12%;
+}
+
+.hero-stats{
+	display:inline-block;
+	vertical-align:top;
+	margin-left:30px;
+	width:12%;
+}
+
+.hero-level{
+	display:inline-block;
+	vertical-align: top;
+	width:12%;
+}
+
+.hero-btn{
+	display:inline-block;
+	vertical-align:top;
+	margin-top:3%;
+	width:12%;
+}
+
+.hero-btn button{
+	border:none;
+	background-color:#af5934;
+	color:black;
+	border-radius:25px;
+}
+
+.hero-btn button:active{
+	transform:translateY(2px);
+}
+
+.hero-btn button:focus{
+	outline:none;
+}
+
