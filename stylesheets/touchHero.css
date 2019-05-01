@@ -1,7 +1,14 @@
+*{
+	  -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 body{
 	margin:0;
 	background-color:#34af4f;
-	user-select:none;		
+		
 }
 
 nav{
@@ -49,7 +56,8 @@ ul{
 	margin:auto;
 	border-radius:50%;
 	background-color:red;
-	margin-top:30px;
+	margin-top:-10px;
+	margin-bottom:20px;
 }
 
 .entity:active{

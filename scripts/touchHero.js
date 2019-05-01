@@ -9,7 +9,7 @@ var player = {
 	atk: 10,
 	res: 2,
 	gold: 0,
-	upgradeCost: 100,
+	upgradeCost: 10,
 	stage: 1
 }
 
@@ -70,10 +70,10 @@ function updateHealthBar(){
 	}
 	if(calc_pHealth <= 0){calc_pHealth = 0}
 
-	eHealth_text.innerHTML = entity.health + "/" + entity.healthCurr;
+	eHealth_text.innerHTML = "HP: "  + entity.healthCurr + "/" + entity.health;
 	eHealth_bar.style.width = calc_eHealth + "%";
 
-	pHealth_text.innerHTML = player.health + "/" + player.cHealth;
+	pHealth_text.innerHTML = player.cHealth + "/" + player.health;
 	pHealth_bar.style.width = calc_pHealth + "%";
 }
 
@@ -90,7 +90,7 @@ function levelUp(){
 		if(player.gold < 0){
 			player.gold = 0;
 		}
-		player.upgradeCost = player.level + (Math.floor((100 * player.level) * 1.75));
+		player.upgradeCost = Math.floor(player.upgradeCost * 1.25);
 		updateScreen();	
 		updateHealthBar();
 	}
